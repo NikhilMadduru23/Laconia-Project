@@ -1,0 +1,11 @@
+version: "3.1"
+
+nlu:
+- intent: atis_flight
+  examples: |
+    - would like find flight charlotte las vegas makes stop louis
+    - need flight toronto newark one way leaving wednesday evening thursday morning
+- intent: atis_airfare
+  examples: |
+    - april first need ticket tacoma san jose departing
+    - expensive one way fare detroit westchester county

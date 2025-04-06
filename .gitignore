@@ -1,0 +1,50 @@
+# Python virtual environment
+rasa_env/
+venv/
+
+rasa_component/.rasa/
+rasa_component/intent_classifier/
+
+# Rasa-specific exclusions
+models/  # Trained Rasa models
+results/  # Training outputs from transformers
+logs/    # Log files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Trained intent classifier
+results/
+models/
+logs/
+intent_classifier/
+*.bin  # PyTorch model files
+*.json  # Config files from training
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency lock files (if not needed)
+Pipfile.lock
+poetry.lock
+
+# Data files (if large or sensitive)
+data/processed/*
+*.csv  # Exclude CSVs unless you want to track them
+
+# Misc
+*.egg-info/
+dist/
+build/

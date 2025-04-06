@@ -1,0 +1,33 @@
+version: "3.1"
+
+intents:
+  - atis_flight
+  - atis_airfare
+  - atis_ground_service
+  - atis_airline
+  - atis_flight_time
+  - atis_quantity
+  - atis_abbreviation
+  - atis_aircraft
+
+responses:
+  utter_atis_flight:
+    - text: "I can help you find a flight! Where are you flying from and to?"
+  utter_atis_airfare:
+    - text: "Looking for ticket prices? Please tell me the route."
+  utter_atis_ground_service:
+    - text: "Need transportation info? Which airport are you at?"
+  utter_atis_airline:
+    - text: "Want to know about airlines? Specify the route, and I’ll help!"
+  utter_atis_flight_time:
+    - text: "I can provide flight times. Which cities and date are you interested in?"
+  utter_atis_quantity:
+    - text: "How many flights or items are you asking about? Please clarify."
+  utter_atis_abbreviation:
+    - text: "What abbreviation do you need explained?"
+  utter_atis_aircraft:
+    - text: "Curious about aircraft types? Tell me the flight or route."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

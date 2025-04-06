@@ -1,0 +1,35 @@
+version: "3.1"
+
+rules:
+- rule: Respond to atis_flight
+  steps:
+  - intent: atis_flight
+  - action: utter_atis_flight
+- rule: Respond to atis_airfare
+  steps:
+  - intent: atis_airfare
+  - action: utter_atis_airfare
+- rule: Respond to atis_ground_service
+  steps:
+  - intent: atis_ground_service
+  - action: utter_atis_ground_service
+- rule: Respond to atis_airline
+  steps:
+  - intent: atis_airline
+  - action: utter_atis_airline
+- rule: Respond to atis_flight_time
+  steps:
+  - intent: atis_flight_time
+  - action: utter_atis_flight_time
+- rule: Respond to atis_quantity
+  steps:
+  - intent: atis_quantity
+  - action: utter_atis_quantity
+- rule: Respond to atis_abbreviation
+  steps:
+  - intent: atis_abbreviation
+  - action: utter_atis_abbreviation
+- rule: Respond to atis_aircraft
+  steps:
+  - intent: atis_aircraft
+  - action: utter_atis_aircraft

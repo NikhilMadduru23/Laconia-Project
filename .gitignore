@@ -40,10 +40,6 @@ Thumbs.db
 Pipfile.lock
 poetry.lock
 
-# Data files (if large or sensitive)
-data/processed/*
-*.csv  # Exclude CSVs unless you want to track them
-
 # Misc
 *.egg-info/
 dist/
